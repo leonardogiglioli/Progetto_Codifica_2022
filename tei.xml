@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transf.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title type="main">Per Oliva...</title>
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt xml:id="trascr">
+                    <resp>Trascrizione realizzata da:</resp>
+                    <name xml:id="LF">Lucrezia Fattori, </name>
+                    <name xml:id="LG">Leonardo Giglioli</name>
+                </respStmt>
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt xml:id="ente">
+                    <resp>Ente di Appartenenza:</resp>
+                    <name type="comune" xml:id="CSP">Comune di La Spezia</name>
+                </respStmt>
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, <orgName type="university">Università di Pisa</orgName>
+                    <!-- COMPILAZIONE -->
+                    <date when="2022">2022</date>
+                </edition>
+                <!-- NOME COMPILATORE -->
+                <respStmt xml:id="cod">
+                    <resp>Codifica realizzata da:</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt xml:id="comp">
+                    <resp>Compilatore:</resp>
+                    <name ref="#TC">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt xml:id="resp">
+                    <resp>Responsabile scientifico:</resp>
+                    <name xml:id="GP">Giacomo Paolicchi,</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt xml:id="funz">
+                    <resp>Funzionario responsabile:</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            <!--Descrizione sulla grandezza della cartella-->
+            <extent>Cartella composta da 12 file, dimensioni di circa 2MB</extent>
+            
+            <publicationStmt>
+                <publisher>
+                    <orgName type="university">Università di Pisa</orgName>
+                </publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Disponibile solo con licenza concessa dal </p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>
+                        <orgName type="laboratorio" xml:id="labCD">Laboratorio di Cultura Digitale - Università di Pisa</orgName>
+                    </addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country key="IT">Italy</country>
+                        <settlement type="city">La Spezia</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei
+                            cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <!--Descriizione del progetto-->
+            <projectDesc>
+                <p> 
+                    Il sito e la codifica delle cartoline sono state realizzate da Lucezia Fattori e Leonardo Giglioli per l'esame
+                    di Codifica di Testi tenuto dal Porofessore del Grosso.
+                </p>
+                <p>
+                    Le cartoline provengono e sono conservate nel Museo Civico Etnografico di La Spezia dove se ne trovano più di 200 
+                    unità, sono redatte tra il 1911 e il 1918 e, molte di esse, sono state scritte durante la Grande Guerra. 
+                </p>
+                <p>
+                    Principalemente le cartoline presenti sono state scritte e inviate da Giovanni Coliola e destinate ad Oliva Turtura (i due
+                    erano sentimentalmente legati).
+                    Le cartoline codificate in questo sito sono state scritte da Mario (probabilmente un conoscente della famiglia Turtura), 
+                    Giuseppe (cugino di Oliva) e Giovanni.
+                </p>
+            </projectDesc>
+            <!--Informazioni su principi e pratiche editoriali applicate-->
+            <editorialDecl>
+                <punctuation marks="all">
+                    <p>E' stata mantenuta la punteggiatura che si trova sulle cartoline</p>
+                </punctuation>
+                <hyphenation eol="all">
+                    <p>Sono stati mantenuti tutti i trattini di fine riga</p>
+                </hyphenation>
+                <p> 
+                    Abbiamo mantenuto lo stesso stile di scrittura che abbiamo trovato sulle cartoline, quindi abbiamo rispettato eventuali linee vuote, divisione 
+                    delle parole per andare a capo, maiuscole e minuscole, punteggiatura, abbreviazioni, errori di scrittura e correzioni.
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <!--Codifica prima cartolina n°30-->
+    <TEI xml:id="C1">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Profilo di donna</title>       
+                </titleStmt>
+
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university">Università di Pisa</orgName>
+                    </publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+                            
+                <sourceDesc>
+                    <bibl>
+                        <title type="titolo">[Donna seduta]</title>
+                    </bibl>
+                    <msDesc>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <msIdentifier>
+                            <country type="nation">Italia</country>
+                            <settlement type="city">La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno type="codice">7694-030_001/002</idno>
+                            <altIdentifier>
+                                <idno type="codice">30</idno>
+                            </altIdentifier>
+                        </msIdentifier>
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp type="postage">Francobollo - Regno d'Italia</stamp>
+                                        <stamp type="postmark">Timbro illeggibile</stamp>
+                                        <stamp type="stampa1">Numero di serie cartolina</stamp>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                    <!-- NOMI -->
+                    <listPerson>
+                        <person xml:id="M">
+                            <persName ref="#M">
+                                <forename>Mario</forename>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Non siamo a conoscenza del cognome o del tipo di relazione che lo lega ad Oliva e alla famiglia Turtura</note>
+                        </person>
+                        <person xml:id="OT">
+                            <persName ref="#OT">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex>F</sex>
+                        </person>
+                        <person xml:id="GR">
+                            <persName ref="#GR">
+                                <forename>Gerolamo</forename>
+                                <surname>Rossi</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Impreditore e politico italiano</note>
+                        </person>
+                    </listPerson>
+                    <!--Specifica la relazione tra le persone indicate nella cartolina-->
+                    <listRelation>
+                        <relation name="unknown" mutual="#M #OT"/>
+                    </listRelation>                    
+
+                    <listPlace>
+                        <place xml:id="RV">
+                            <placeName ref="#RV">Ravenna</placeName>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Ravenna</district>
+                            <district type="provincia">RV</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="N">IT</country>
+                        </place>
+                        <place xml:id="MI">
+                            <placeName ref="#MI">Milano</placeName>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Milano</district>
+                            <district type="provincia">MI</district>
+                            <region>Lombardia</region>
+                            <country key="N">IT</country>
+                        </place>
+                    </listPlace>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#M">Mario</persName>
+                        <placeName ref="#MI">Milano</placeName>
+                        <date type="writing" when="1915-06-09">09/06/1915</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT">Oliva Turtura</persName>
+                        <placeName ref="#RV">Ravenna</placeName>
+                    </correspAction>
+                </correspDesc>
+            
+                <textClass>
+                    <keywords>
+                        <!-- soggettario -->
+                        <!-- tipologia -->
+                        <!-- descrizione -->
+                        <term>Cartolina</term>
+                        <term>Cartolina Artistica</term>
+                        <term>Profilo di donna</term>
+                    </keywords>
+                </textClass>
+            
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+        <!--Codifica del retro della cartolina-->
+        <facsimile>
+            <surface ulx="0" uly="0" lrx="644" lry="400" n="30">
+                <graphic url="7694-030R.jpg"/>
+                <zone xml:id="data1" ulx="5" uly="1" lrx="65" lry="260"/>
+                <zone xml:id="numero1" ulx="75" uly="1" lrx="115" lry="25"/>
+                <zone xml:id="indirizzo1" ulx="300" uly="160" lrx="643" lry="399"/>
+                <zone xml:id="messaggio1" ulx="190" uly="20" lrx="305" lry="395"/>
+                <zone xml:id="signed1" ulx="150" uly="150" lrx="210" lry="270"/>
+                <zone xml:id="serie1" ulx="280" uly="390" lrx="330" lry="399"/>
+                <zone xml:id="timbro1" ulx="535" uly="1" lrx="643" lry="110"/>
+                <zone xml:id="francobollo1" ulx="520" uly="25" lrx="620" lry="145"/>
+            </surface>
+        </facsimile>
+    
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="prima">
+        <!-- TRASCRIZIONE -->
+            <body>
+                <div type="note">
+                    <noteGrp>
+                        <note>
+                            Sul fronte non c'è traccia di un'eventuale firma d'artista.
+                        </note>
+                        <note>
+                            La cartolina è scritta a mano da Mario, però il numero 30 situato in alto a sinistra è stato aggiunto 
+                            dal catalogatore (numero di inventario).
+                        </note>
+                        <note>
+                            Sul retro oltre al numero di catalogazione ci sono altre cifre stampate direttamente sulla cartolia.
+                        </note>
+                    </noteGrp>
+                </div>
+                
+                <div type="fronte">
+                    <figure>
+                        <head>Donna seduta</head>
+                        <graphic url="7694-030F.jpg" />
+                        <figDesc>Donna seduta con abito verde elegante su sfondo neutro e non definito.</figDesc>
+                    </figure>
+                </div>
+                
+                <div type="message" n="1">
+                    <opener>
+                        <dateline facs="#data1" rend="align left">
+                            <lb/><placeName ref="#MI">Milano</placeName>
+                            <date when="1915-6-9"> 9/6-15</date>
+                        </dateline>
+                    </opener>
+                    <p facs="#messaggio1">
+                        <lb/>Saluti cordialissimi
+                        <lb/>a tutti.
+                    </p>
+                    <closer>
+                        <signed facs="#signed1" rend="align center">
+                            <persName ref="#M"><forename>Mario</forename></persName>
+                        </signed>
+                    </closer>
+                </div>
+                <div type="details" n="1">
+                    <p>
+                        <add hand="#catalogatore">
+                            <idno facs="#numero1">30</idno>
+                        </add>
+
+                        <stamp type="postmark"> 
+                            <mentioned facs="#timbro1">
+                                <unclear reason="illegible">Timbro illeggibile</unclear>
+                            </mentioned>
+                        </stamp>
+                        <stamp type="postage" facs="#francobollo1">Francobollo da 5 centesimi del Regno d'Italia</stamp>
+                        <stamp type="stampa1" facs="#serie1">
+                            <mentioned><num>2840-5</num></mentioned>
+                        </stamp>
+                    </p>
+                </div>
+                <div type="destination" n="1">
+                    <p>
+                        <address facs="#indirizzo1">
+                            <lb/><addrLine>Alla Gentilissima</addrLine>
+                            <lb/><addrLine>
+                                    <persName ref="#OT">
+                                        <forename>Oliva </forename>
+                                        <surname>Turtura</surname>
+                                    </persName>
+                                </addrLine>
+                            <lb/>
+                            <addrLine>Via
+                                <persName ref="#GR">
+                                    <forename>Gerolamo </forename><surname>Rossi</surname>
+                                </persName> 
+                                <num> 58 </num>
+                            </addrLine>
+                            <lb/><addrLine><placeName ref="#RV"><hi rend="underline">Ravenna</hi></placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI>
+    <!--Codifica prima cartolina n°60-->
+    <TEI xml:id="C2">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Fievred d'amour</title>       
+                </titleStmt>
+            
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university">Università di Pisa</orgName>
+                    </publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title type="titolo">Fievre d'amour</title>
+                        <author><persName ref="#DM">D. Mastroianni</persName></author>
+                        <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina.  -->
+                        <publisher>A.N Paris</publisher>
+                        <pubPlace>Paris</pubPlace>
+                        <!-- LUOGO -->
+                        <date when="1912">1912</date>
+                    </bibl>
+                    <msDesc>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <msIdentifier>
+                            <country type="nation">Italia</country>
+                            <settlement type="city">La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno type="codice">7694-064_001/002</idno>
+                            <altIdentifier>
+                                <idno type="codice">64</idno>
+                            </altIdentifier>
+                        </msIdentifier>
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp type="postage">Francobollo - Regno d'Italia</stamp>
+                                        <stamp type="postmark">Timbro Genova</stamp>
+                                        <stamp type="stampa1">Copyright</stamp>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                    <!-- NOMI -->
+                    <listPerson>
+                        <person xml:id="GT">
+                            <persName ref="#GT">
+                                <forename>Giuseppe</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Cugino di Oliva</note>
+                        </person>
+                        <person>
+                            <persName ref="#OT">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex>F</sex>
+                        </person>
+                        <person xml:id="C">
+                            <persName ref="#C">
+                                <forename>Carolina</forename>
+                            </persName>
+                            <sex>S</sex>
+                            <note>Non conosciamo nulla di lei</note>
+                        </person>
+                        <person xml:id="CB">
+                            <persName ref="#CB">
+                                <surname>Cibecchini</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Non conosciamo nulla del signor Cibecchini, sappiamo che abita ad Arona ed ha ospitato la Signorina Oliva</note>
+                        </person>
+                        <person xml:id="DM">
+                            <persName ref="#DM">
+                                <forename>
+                                    <choice>
+                                        <expan>Domenico</expan>
+                                        <abbr>D.</abbr>
+                                    </choice>
+                                </forename>
+                                <surname>Mastroianni</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <occupation>Scultore</occupation>
+                        </person>
+                        <person xml:id="AN">
+                            <persName ref="#AN">
+                                <forename>
+                                    <choice>
+                                        <expan>Armand</expan>
+                                        <abbr>A.</abbr>
+                                    </choice>
+                                </forename>
+                                <surname>Noyer</surname>
+                            </persName>
+                            <sex>M</sex>
+                            <nationality key="fr">Francese</nationality>
+                            <occupation>Editore di cartoline</occupation>
+                        </person>
+                        <person xml:id="CC">
+                            <persName ref="#CC">
+                                <forename>Camillo</forename>
+                                <surname>Benso</surname>
+                                <roleName>conte di Cavour</roleName>
+                            </persName>
+                            <sex>M</sex>
+                            <note>Impreditore e politico italiano</note>
+                        </person>
+                    </listPerson>
+                    <!--Specifica la relazione tra le persone indicate nella cartolina-->
+                    <listRelation>
+                        <relation name="cousins" mutual="#GT #OT"/>
+                    </listRelation>      
+                        
+                    <listPlace>
+                        <place>
+                            <placeName ref="#RV">Ravenna</placeName>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Ravenna</district>
+                            <district type="provincia">RV</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="N">IT</country>
+                        </place>
+                        <place xml:id="AR">
+                                <placeName ref="#AR">Arona</placeName>
+                                <settlement type="località">Città</settlement>
+                                <district type="comune">Arona</district>
+                                <district type="provincia">NO</district>
+                                <country key="N">IT</country>
+                                <region>Piemonte</region>
+                                <note>Località <geogName>Lago Maggiore</geogName></note>
+                            </place>
+                    </listPlace>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#GT">Giuseppe Turtura</persName>
+                        <placeName ref="#RV">Ravenna</placeName>
+                        <date type="writing" when="1913-07-25">25/07/1913</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT">Oliva Turtura</persName>
+                        <placeName ref="#AR">Arona</placeName><geogName>Lago Maggiore</geogName>
+                        <date type="received" when="1913-07-26">26/07/1913</date>
+                    </correspAction>
+                </correspDesc>
+            
+                <textClass>
+                    <keywords>
+                        <!-- soggettario -->
+                        <!-- tipologia -->
+                        <!-- descrizione -->
+                        <term>Cartolina </term>
+                        <term>Cartolina Artistica </term>
+                        <term>Donna con cagnolino</term>
+                    </keywords>
+                </textClass>
+            
+                <langUsage>
+                    <language ident="it-IT">Italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+        <!--Codifica del retro della cartolina-->
+        <facsimile>
+            <surface ulx="0" uly="0" lrx="624" lry="400" n="64">
+                <graphic url="7694-064R.jpg"/>
+                <zone xml:id="data2" ulx="45" uly="5" lrx="270" lry="50"/>
+                <zone xml:id="numero2" ulx="400" uly="5" lrx="435" lry="35"/>
+                <zone xml:id="messaggio2" ulx="30" uly="65" lrx="310" lry="345"/>
+                <zone xml:id="signed2" ulx="110" uly="340" lrx="235" lry="390"/>
+                <zone xml:id="serie2" ulx="20" uly="125" lrx="35" lry="320"/>
+                <zone xml:id="timbro2" ulx="285" uly="5" lrx="390" lry="110"/>
+                <zone xml:id="timbro22" ulx="445" uly="5" lrx="555" lry="125"/>
+                <zone xml:id="timbro222" ulx="360" uly="65" lrx="475" lry="180"/>
+                <zone xml:id="francobollo2" ulx="510" uly="25" lrx="600" lry="135"/>
+                <zone xml:id="indirizzo2" ulx="320" uly="150" lrx="610" lry="380"/>
+            </surface>
+        </facsimile>   
+   
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="seconda">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="note">
+                    <noteGrp>
+                        <note>
+                            Sul fronte della cartolina troviamo la firma di Domenico Mastroianni (scultore) l'autore dell'opera, 
+                            possiamo notare anche una scritta in francese "Fievre d'amour" (Febbre d'amore). Sempre sul fronte possiamo
+                            leggere A.N Paris, abbreviazione di Armand Noyer, ovvero colui che ha pubblicato la cartolia.
+                        </note>
+                        <note>
+                            Sul retro troviamo il numero 64 che serve per identificare (catalogare) la cartolina tra le centinaia di cartoline 
+                            presenti nell'archivio. E la scritta “Copyright by A. Noyer 1912 – Allegorie n 198”.
+                        </note>
+                        <note>
+                            Questa cartolina è scritta da Giuseppe (parente stretto di Oliva di cui però non sappiamo il grado) ed è indirizzata 
+                            ad Oliva, l'indirizzo di destinazione non è Ravenna, dove abita Oliva, ma Arona, dove Oliva si era recata per un certo 
+                            periodo (non conosciamo il motivo).
+                        </note>
+                    </noteGrp>
+                </div>
+
+                <div type="fronte">
+                    <figure>
+                        <head>Fievre d'amour</head>
+                        <graphic url="7694-064F.jpg" />
+                        <figDesc>Uomo si abbevera dalla mano di una persona in una grotta.</figDesc>
+                    </figure>
+                </div>
+                
+                <div type="message" n="2">
+                    <opener>
+                        <dateline facs="#data2" rend="align left">
+                            <lb/><placeName ref="#RV">Ravenna</placeName>
+                            <date when="1913-07-25">25-VII-913</date>
+                        </dateline>
+                    </opener>
+                    <p facs="#messaggio2">
+                        <lb/>Oggi finalmente abbia-
+                        <lb break="no"/>mo avuto una bella gior-
+                        <lb break="no"/>nata piena di sole da
+                        <lb/>tanto tempo era attesa.
+                        <lb/>La salute è ottima
+                        <lb/>Attendiamo notizie
+                        <lb/>da Arona.
+                        <lb/>Saluti sinceri a te e
+                        <lb/>alla <choice><abbr type="titolo">Sig.na </abbr><expan>Signorina</expan></choice><persName ref="#C"> Carolina</persName>.
+                    </p>
+                    <closer>
+                        <signed facs="#signed2" rend="align center">
+                                <persName ref="#GT"><forename><hi rend="underline">Giuseppe</hi></forename></persName>
+                        </signed>
+                    </closer>
+                </div>
+                <div type="details" n="2">
+                    <p>
+                        <add hand="#catalogatore">
+                            <idno facs="#numero2">64</idno>
+                        </add>
+                        <!-- stamps -->
+                        <stamp type="postmark">
+                            <mentioned facs="#timbro2">
+                                <unclear reason="feeded">
+                                    <supplied>
+                                        <placeName ref="#RV">Ravenna </placeName><choice><abbr>ARR.</abbr><expan>Arrivi</expan></choice> E <choice><abbr>PART.</abbr><expan>Partenze</expan></choice>
+                                    </supplied>
+                                </unclear>
+                            </mentioned>
+                            <date when="1913-07-25" facs="#timbro2">25.7.13.20</date>
+                        </stamp>
+                        <stamp type="postmark2">
+                            <mentioned facs="#timbro22">
+                                <placeName ref="#RV">Ravenna </placeName><choice><abbr>ARR.</abbr><expan>Arrivi</expan></choice> E <choice><abbr>PART.</abbr><expan>Partenze</expan></choice>
+                            </mentioned>
+                            <date when="1913-07-25" facs="#timbro22">25.7.13.20</date>
+                        </stamp>
+                        <stamp type="postmark3">
+                            <mentioned facs="#timbro222">
+                                <placeName ref="#AR">Arona</placeName> <placeName ref="#NO">Novara</placeName>  
+                            </mentioned>
+                            <date when="1913-07-26" facs="#timbro222">26.7.13.10</date>
+                            <note> Timbro di arrivo a destinazione.</note>
+                        </stamp>  
+                        <stamp type="postage" facs="#francobollo2">Francobollo da 10 centesimi del Regno d'Italia</stamp>
+                        <stamp type="stampa1" facs="#serie2">
+                            <mentioned>
+                                Copyright by <abbr>A.</abbr> <persName ref="#AN">Noyer</persName>. <date when="1912">1912</date>. Allegoria N° <num>198</num> 
+                            </mentioned>
+                        </stamp>
+                    </p>
+                </div>
+                <div type="destination" n="2">
+                    <p>
+                        <address facs="#indirizzo2">
+                            <addrLine><lb/>Signorina </addrLine>
+                            <addrLine>
+                                <persName ref="#OT"> 
+                                    <lb/><forename>Oliva </forename>
+                                    <surname>Turtura</surname>
+                                </persName>
+                            </addrLine>
+                            <addrLine><lb/>presso 
+                                <choice>
+                                    <abbr type="titolo">Sig.</abbr>
+                                    <expan>Signore</expan>
+                                </choice>
+                                <persName ref="#CB"> 
+                                    <surname>Cibecchini</surname>
+                                </persName>
+                            </addrLine>
+                            <addrLine><lb/>Via 
+                                <persName ref="#CC">Cavour</persName>
+                                <num>12 </num>
+                            </addrLine>
+                            <addrLine> 
+                                <lb/><placeName ref="#AR"><hi rend="align right">Arona</hi></placeName>
+                            </addrLine>
+                            <addrLine> 
+                                <lb/><geogName>(Lago Maggiore)</geogName>
+                            </addrLine>
+                        </address>
+                    </p>
+                </div>
+            </body>    
+        </text> 
+    </TEI>  
+    <!--Codifica prima cartolina n°145-->
+    <TEI xml:id="C3">        
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Donna alla scrivania</title>       
+                </titleStmt>
+            
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university">Università di Pisa</orgName>
+                    </publisher>
+                    <pubPlace>Pisa</pubPlace>
+                </publicationStmt>
+            
+                <sourceDesc>
+                    <bibl>
+                        <title type="titolo">[Donna alla scrivania]</title>
+                    </bibl>
+                    <msDesc>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <msIdentifier>
+                            <country type="nation">Italia</country>
+                            <settlement type="city">La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno type="codice">7694-145_001/002</idno>
+                            <altIdentifier>
+                                <idno type="codice">145</idno>
+                            </altIdentifier>
+                        </msIdentifier>
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp type="postage">Francobollo da 5 centesimi - Regno d'Italia</stamp>
+                                        <stamp type="stampa1">Stampata in Italia</stamp>
+                                        <stamp type="stampa2">Numero di serie cartolina</stamp>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                    <!-- NOMI -->
+                    <listPerson>
+                        <person xml:id="GC">
+                            <persName ref="#GC">
+                                <forename>Giovanni</forename>
+                                <surname>Coliola </surname>
+                            </persName>
+                            <sex>M</sex>
+                            <occupation n="1">Tenente colonnello</occupation>
+                            <note>Molto probabilmente è legato sentimentalmente a Oliva</note>
+                        </person>
+                        <person>
+                            <persName ref="#OT">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex>F</sex>
+                        </person>
+                    </listPerson>
+                    <!--Specifica la relazione tra le persone indicate nella cartolina-->
+                    <listRelation>
+                        <relation name="relationship" mutual="#GC #OT"/>
+                    </listRelation>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#GC">Giovanni Coliola</persName>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT">Oliva Turtura</persName>
+                    </correspAction>
+                </correspDesc>
+            
+                <textClass>
+                    <keywords>
+                        <!-- soggettario -->
+                        <!-- tipologia -->
+                        <!-- descrizione -->
+                        <term>Cartolina </term>
+                        <term>Cartolina Artistica </term>
+                        <term>Mazzolino di fiori</term>
+                    </keywords>
+                </textClass>
+            
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+        <!--Codifica del retro della cartolina-->
+        <facsimile>
+            <surface ulx="0" uly="0" lrx="612" lry="400" n="145">
+                <graphic url="7694-145R.jpg"/>
+                <zone xml:id="data3" ulx="60" uly="5" lrx="290" lry="40"/>
+                <zone xml:id="numero3" ulx="470" uly="5" lrx="500" lry="30"/>
+                <zone xml:id="messaggio3" ulx="5" uly="40" lrx="610" lry="320"/>
+                <zone xml:id="signed3" ulx="165" uly="315" lrx="450" lry="365"/>
+                <zone xml:id="stampa3" ulx="505" uly="25" lrx="585" lry="120"/>
+                <zone xml:id="serie3" ulx="265" uly="371" lrx="310" lry="385"/>
+            </surface>
+        </facsimile>
+   
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="terza">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="note">
+                    <noteGrp>
+                        <note>
+                            Sul retro troviamo due valori numerici, il numero 145 serve per identificare (catalogare) la cartolina tra quelle presenti nell'archivio.
+                            L'altro è un numero di serie stampato direttamente sulla cartolia.
+                        </note>
+                        <note>
+                            Questa cartolina è stata scritta da Giovanni Coliola ed è indirizzata ad Oliva, la cartolina presenta una particolarità: non è stata mai spedita,
+                            infatti non è presente un destinatario e non ci sono nè francobolli nè timbri.
+                        </note>
+                    </noteGrp>
+                </div>
+
+                <div type="fronte">
+                    <figure>
+                        <head>Donna alla scrivania</head>
+                        <graphic url="7694-145F.jpg" />
+                        <figDesc>Donna seduta alla sua scrivania con lampada accesa intenta a leggere.</figDesc>
+                    </figure>
+                </div>
+
+                <div type="message" n="3">
+                    <opener facs="#data3" rend="align left">
+                        <salute>
+                            <lb/><persName ref="#OT">Oliva</persName> mia
+                        </salute>
+                    </opener>
+                    <p facs="#messaggio3">
+                        <lb/>un rapido saluto, un bacio d'amore,
+                        <lb/>in cui tutta l'anima cede all'amore.
+                        <lb/><persName ref="#OT">Oliva</persName>, <persName ref="#OT">Oliva</persName> ti chiamo, ti invoco
+                        <lb/>ti ricordo sempre!!.... 
+                        <lb/>Ti voglio presso di me per amarti d'un
+                        <lb/>amore ardente, sublime, grande.
+                    </p>
+                    <closer>
+                        <signed facs="#signed3" rend="align center">
+                            <persName ref="#GC"><forename><hi rend="underline">Giovannino</hi></forename></persName>
+                        </signed>
+                     </closer>
+                </div>
+
+                <div type="details" n="3">
+                    <p>
+                        <add hand="#catalogatore">
+                            <idno facs="#numero3">145</idno>
+                        </add>
+
+                        <stamp type="stampa1" facs="#stampa3">
+                            <mentioned>Stampata in ITALIA</mentioned>
+                        </stamp>
+                        <stamp type="stampa2" facs="#serie3">
+                            <mentioned><num>806-3</num></mentioned>
+                        </stamp>
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI>  
+</teiCorpus>
